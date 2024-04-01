@@ -56,7 +56,7 @@ The project is organized into several key directories and files:
   ```bash
   python -m unittest discover tests
   ```
-- Use continuous integration tools, like GitHub Actions, to automate testing and ensure code quality.
+
 
 
 
