@@ -2,40 +2,49 @@
 # Network Scanner Tool
 
 ## Overview
-The Network Scanner Tool is a Python-based application designed to scan and analyze your local network. It identifies connected devices, checks for open ports, and performs basic OS detection. This tool is useful for network administrators, cybersecurity professionals, and anyone interested in network security.
+The Advanced Network Scanner Tool is a robust application designed for network analysis, providing detailed insights into network infrastructure and security vulnerabilities. Featuring a user-friendly graphical interface and powered by sophisticated scanning algorithms, this tool is essential for network administrators and cybersecurity professionals seeking to safeguard their environments.
 
-## Features
-- **Device Discovery**: Identify all devices connected to the network.
-- **Port Scanning**: List open ports on discovered devices.
-- **OS Detection**: Infer operating systems of networked devices.
+## Key Features
+- **Comprehensive Network Scanning**: Discover devices, open ports, and services across your network.
+- **Vulnerability Assessment**: Identify and report potential security risks.
+- **Real-time Monitoring**: Track network activities and anomalies as they happen.
+- **Intuitive GUI**: Easy-to-navigate graphical interface for seamless operation.
+- **Detailed Reporting**: Generate extensive reports on network status and vulnerabilities.
+- **Customization and Extensibility**: Tailor the tool to meet specific network analysis needs.
 
 ## Getting Started
 
 ### Prerequisites
-You'll need Python installed on your system to run the network scanner. Ensure you have administrative or network permissions to conduct scans.
+- Python 3.6 or higher
+- Network privileges for scanning operations
 
 ### Installation
-Clone the repository and install the necessary dependencies:
-
-```bash
-git clone https://github.com/jfuchs01/network-scanner.git
-cd network-scanner
-pip install -r requirements.txt
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/jfuchs01/advanced-network-scanner.git
+   ```
+2. Navigate to the project directory and install the dependencies:
+   ```
+   cd advanced-network-scanner
+   pip install -r requirements.txt
+   ```
 
 ### Usage
-Execute the script from the command line to start the network scan:
-
-```bash
-python network_scanner.py
+Run the application from the command line:
 ```
+python -m gui.main_window
+```
+Navigate through the GUI to perform network scans, view results, and generate reports.
 
-## How It Works
-The tool uses the `scapy` library to craft and send packets across the network, listening for responses to identify devices and open ports. It then analyzes the collected data to provide a summary of the network state.
+## Documentation
+For detailed information on installation, usage, and development, refer to the [docs](docs/) folder in the project repository.
+
+- **[Installation Guide](docs/installation.md)**: Instructions for setting up the tool.
+- **[User Guide](docs/user_guide.md)**: How to use the tool effectively.
+- **[Developer Guide](docs/developer_guide.md)**: Information for developers interested in contributing to the project.
+- **[FAQ](docs/faq.md)**: Answers to common questions and troubleshooting tips.
 
 ## Contributing
-Your contributions are welcome! If you have suggestions or improvements, please fork the repo and submit a pull request.
-
-
+We welcome contributions to the Advanced Network Scanner Tool. Please refer to the [Developer Guide](docs/developer_guide.md) for more information on how to contribute. For bug reports and feature requests, please use the GitHub issues page.
 
 
